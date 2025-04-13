@@ -1,0 +1,20 @@
+*.sql
+backup-*.sql
+
+
+*.log        # Logs (e.g., error.log)
+*.tmp        # Temporary files
+*.bak        # Backup
+
+.idea/
+*.iml
+
+uploads/
+backups/
+
+# Sensitive config
+config.php
+db-credentials.php
+
+# macOS junk
+.DS_Store

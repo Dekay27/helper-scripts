@@ -3,10 +3,7 @@
 header('Content-Type: text/plain'); // Plain text for readability
 
 // Database connection
-$mysqli = new mysqli("localhost", "root", "admin12345", "asset_management");
-if ($mysqli->connect_error) {
-    die("Connection failed: " . $mysqli->connect_error);
-}
+$mysqli = include("config.php");
 
 // Get all table names
 $result = $mysqli->query("SHOW TABLES");

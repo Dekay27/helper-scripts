@@ -32,7 +32,7 @@ function generateHash(string $value): void {
 if (PHP_SAPI !== 'cli') {
     ?>
     <!DOCTYPE html>
-    <html>
+    <html lang="en">
     <head>
         <title>Password Hash Generator</title>
     </head>

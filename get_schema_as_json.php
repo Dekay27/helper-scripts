@@ -3,7 +3,7 @@
 header('Content-Type: application/json');
 
 // Database connection
-$mysqli = new mysqli("localhost", "root", "admin12345", "asset_management");
+$mysqli = include("config.php");
 
 if ($mysqli->connect_error) {
     http_response_code(500);
